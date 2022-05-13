@@ -1,14 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("Eyooo, was geht was geht")
 
-	fmt.Println("bla bla alter, kein plan")
+	n, err := fmt.Println("bla bla alter, kein plan")
+	fmt.Println(n)
+	fmt.Println(err)
 
-	for i := 5; i < 10; i++ {
-		if i%2 == 0 {
+	for i := 10; i < 30; i++ {
+		if i%5 == 0 {
 			fmt.Println(i)
 		}
 	}
@@ -16,6 +20,8 @@ func main() {
 	one()
 
 	beard()
+
+	random()
 }
 
 func beard() {
@@ -24,4 +30,10 @@ func beard() {
 
 func one() {
 	fmt.Println("1")
+}
+
+func random() {
+	n, err := fmt.Println("Random")
+	fmt.Println(n)
+	fmt.Println(err)
 }
