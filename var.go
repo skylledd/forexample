@@ -15,16 +15,17 @@ func main() {
 
 	fmt.Println(y)
 
-	321()
-
 	fmt.Println("Test", x)
+
+	paket()
+
+	mom()
 }
 
 func test() {
 	fmt.Println("jo jo, test", y)
 }
 
-func 321() {
-
-	fmt.Println(y)
+func paket() {
+	fmt.Println("Test 24", y)
 }
