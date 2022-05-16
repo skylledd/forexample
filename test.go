@@ -17,6 +17,8 @@ func main() {
 		}
 	}
 
+	mom()
+
 	one()
 
 	beard()
@@ -34,6 +36,12 @@ func one() {
 
 func random() {
 	n, err := fmt.Println("Random")
+	fmt.Println(n)
+	fmt.Println(err)
+}
+
+func mom() {
+	n, err := fmt.Println("Test Test, 3 2 1")
 	fmt.Println(n)
 	fmt.Println(err)
 }
